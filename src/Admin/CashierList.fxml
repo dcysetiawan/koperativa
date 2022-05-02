@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="itemC" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" spacing="32.0" style="-fx-border-color: transparent; -fx-border-width: 0;" stylesheets="@../GlobalStyles.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="cashierName" prefWidth="240.0" text="Dicky Setiawan" textFill="#b7c3d7">
+         <styleClass>
+            <String fx:value="fontMedium" />
+            <String fx:value="fontSize2" />
+            <String fx:value="textWhite" />
+         </styleClass>
+      </Label>
+      <Label fx:id="cashierUsername" prefWidth="200.0" text="dcysetiawan" textFill="#b7c3d7">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <styleClass>
+            <String fx:value="fontMedium" />
+            <String fx:value="fontSize2" />
+            <String fx:value="textWhite" />
+         </styleClass>
+      </Label>
+      <Label fx:id="cashierStatus" alignment="CENTER" prefWidth="120.0" text="active" textFill="#b7c3d7">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <styleClass>
+            <String fx:value="fontMedium" />
+            <String fx:value="fontSize2" />
+            <String fx:value="bgSuccess" />
+            <String fx:value="textWhite" />
+            <String fx:value="btnRounded" />
+         </styleClass>
+         <padding>
+            <Insets bottom="4.0" left="16.0" right="16.0" top="4.0" />
+         </padding>
+      </Label>
+      <Label fx:id="cashierSummary" alignment="CENTER_RIGHT" prefWidth="160.0" text="Rp 720.200" textFill="#b7c3d7">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <styleClass>
+            <String fx:value="fontMedium" />
+            <String fx:value="fontSize2" />
+            <String fx:value="textWhite" />
+         </styleClass>
+      </Label>
+   </children>
+   <styleClass>
+      <String fx:value="bgSecondary" />
+      <String fx:value="btnRounded" />
+   </styleClass>
+   <padding>
+      <Insets left="32.0" right="32.0" />
+   </padding>
+</HBox>

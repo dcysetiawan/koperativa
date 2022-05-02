@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="720.0" styleClass="bgDark" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Auth.LoginController">
+    <stylesheets>
+      <URL value="@../GlobalStyles.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="560.0" styleClass="bgSecondary" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label text="Selamat Datang" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="12.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="180.0" lineSpacing="4.0" prefHeight="48.0" prefWidth="167.0" text="Masuk untuk melanjutkan akses ke aplikasi" textAlignment="CENTER" textFill="#d6d6d6" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="Montserrat Regular" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER" prefWidth="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/koperativa.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label text="© 2021 Koperativa" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Regular" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="16.0" left="24.0" right="24.0" top="16.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="64.0" right="64.0" top="64.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" styleClass="bgDark" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="560.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="400.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label text="Masuk" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="16.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="usernameField" focusColor="#ee778a" labelFloat="true" promptText="Username" styleClass="jfxTextField" unFocusColor="#989898">
+                     <VBox.margin>
+                        <Insets bottom="16.0" top="16.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="passwordField" focusColor="#ee778a" labelFloat="true" promptText="Password" styleClass="jfxTextField" unFocusColor="#989898">
+                     <VBox.margin>
+                        <Insets bottom="16.0" top="16.0" />
+                     </VBox.margin>
+                  </JFXPasswordField>
+                  <VBox alignment="CENTER_RIGHT">
+                     <children>
+                        <JFXButton fx:id="signinButton" onAction="#handleSignIn" ripplerFill="#ff2b4e" text="Masuk">
+                           <styleClass>
+                              <String fx:value="btn" />
+                              <String fx:value="btnPrimary" />
+                              <String fx:value="btnRounded" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="24.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="32.0" left="32.0" right="32.0" top="32.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="64.0" left="64.0" right="64.0" top="64.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

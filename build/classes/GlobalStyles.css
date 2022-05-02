@@ -1,0 +1,265 @@
+.btn{
+    -fx-padding: 12 36 12 36;
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 12;
+    -fx-cursor: hand;
+}
+
+.btnPrimary{
+    -fx-background-color: #EE778A;
+    -fx-text-fill: #FFFFFF;
+}
+
+.btnSuccess{
+    -fx-background-color: #28a745;
+    -fx-text-fill: #FFFFFF;
+}
+
+.btnDanger{
+    -fx-background-color: #dc3545;
+    -fx-text-fill: #FFFFFF;
+}
+
+.btnSecondary{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #424242;
+}
+
+.btnTransparent{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+}
+
+.btnRounded{
+    -fx-background-radius: 9999;
+}
+
+.field{
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 12;
+    -fx-padding: 12 16;
+}
+
+.fieldTransparent{
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 1;
+    -fx-border-color: #989898;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 8 0;
+}
+
+.fieldLight{
+    -fx-background-color: #4A4C5A;
+    -fx-border-width: 0;
+    -fx-border-radius: 4;
+    -fx-text-fill: #FFFFFF;
+}
+
+.fontNormal{
+    -fx-font-family: "Montserrat";
+}
+
+.fontMedium{
+    -fx-font-family: "Montserrat Medium";
+}
+
+.fontSemiBold{
+    -fx-font-family: "Montserrat SemiBold";
+}
+
+.fontBold{
+    -fx-font-family: "Montserrat ExtraBold";
+}
+
+.fontExtraBold{
+    -fx-font-family: "Montserrat ExtraBold";
+}
+
+.fontSize0{
+    -fx-font-size: 10;
+}
+
+.fontSize1{
+    -fx-font-size: 12;
+}
+
+.fontSize2{
+    -fx-font-size: 14;
+}
+
+.fontSize3{
+    -fx-font-size: 16;
+}
+
+.fontSize4{
+    -fx-font-size: 18;
+}
+
+.fontSize5{
+    -fx-font-size: 20;
+}
+
+.fontSize6{
+    -fx-font-size: 24;
+}
+
+.fontSize7{
+    -fx-font-size: 28;
+}
+
+.fontSize8{
+    -fx-font-size: 32;
+}
+
+.textPrimary{
+    -fx-text-fill: #EE778A;
+}
+
+.textSuccess{
+    -fx-text-fill: #28a745;
+}
+
+.textDanger{
+    -fx-text-fill: #dc3545;
+}
+
+.textWhite{
+    -fx-text-fill: #FFFFFF;
+}
+
+.textDark{
+    -fx-text-fill: #343541;
+}
+
+.bgPrimary{
+    -fx-background-color: #EE778A;
+    -fx-text-fill: #FFFFFF;
+}
+
+.bgSuccess{
+    -fx-background-color: #28a745;
+}
+
+.bgDanger{
+    -fx-background-color: #dc3545;
+}
+
+.bgSecondary{
+    -fx-background-color: #4A4C5A;
+    -fx-text-fill: #FFFFFF;
+}
+
+.bgDark{
+    -fx-background-color: #343541;
+    -fx-text-fill: #FFFFFF;
+}
+
+.bgTransparent{
+    -fx-background-color: transparent;
+}
+
+.navMenu{
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 20 20 20 80;
+    -fx-cursor: hand;
+}
+
+.navMenu.active{
+    -fx-background-color: #343541;
+}
+
+.navMenu:hover{
+    -fx-background-color: #3334403e;
+}
+
+.customScrollPane{
+    -fx-fit-to-height: true;
+    -fx-fit-to-width: true;
+    -fx-padding: 1 0;
+}
+
+.customScrollPane:horizontal, .customScrollPane:vertical{
+    -fx-background-color:transparent;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #4A4C5A;
+    -fx-background-radius: 5em;
+}
+
+.customScrollPane > .corner {
+    -fx-background-color: transparent;
+}
+
+.customDatePicker > .text-field{
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 12;
+    -fx-padding: 12 4;
+    -fx-prompt-text-fill: #989898;
+    -fx-text-fill: #FFFFFF;
+}
+
+.jfxTextField{
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 12;
+    -fx-padding: 8 0 8;
+    -fx-prompt-text-fill: #989898;
+    -fx-text-fill: #FFFFFF;
+}
+
+.jfxComboBox{
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 12;
+    -fx-padding: 4 0;
+    -fx-prompt-text-fill: #989898;
+    -fx-text-fill: #FFFFFF;
+}
+
+.jfxLightComboBox{
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 12;
+    -fx-padding: 8 16;
+    -fx-prompt-text-fill: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #4A4C5A;
+    -fx-border-width: 0;
+    -fx-border-radius: 4;
+}
+
+.combo-box .cell:selected{
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 12;
+    -fx-text-fill: #FFFFFF;
+}
+
+.combo-box-popup .list-view .list-cell{
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 12;
+    -fx-text-fill: #343541;
+    -fx-padding: 8;
+}
+
+.combo-box-popup .list-view .list-cell:selected, .combo-box-popup .list-view .list-cell:hover{
+    -fx-background-color: #EE778A;
+    -fx-text-fill: #FFFFFF;
+}
